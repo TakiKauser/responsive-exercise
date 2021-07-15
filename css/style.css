@@ -1,0 +1,78 @@
+/* common style */
+
+body{
+    border: 2px solid red;
+}
+
+/* flex-grid style */
+
+.users-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);    
+}
+.user{
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    color: whitesmoke;
+    background-color: darkred;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* relative-absolute style */
+.container{
+    border: 3px solid orangered;
+    position: relative;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+#box-1{
+    background-color: cornflowerblue;
+}
+#box-2{
+    background-color: rebeccapurple;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    /* top: -50px;
+    left: 50px; */
+}
+#box-3{
+    background-color: teal;
+}
+
+/* responsiveness style */
+
+.welcome-message{
+    color: whitesmoke;
+    background-color: peru;
+    height: 200px;
+}
+@media only screen and (max-width: 688px){
+    .welcome-message{
+        background-color: cornflowerblue;
+        text-align: center;
+        height: 400px;
+    }
+}
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .welcome-message{
+        background-color: red;
+    }
+}
+
+/* animation style */
+
+.animation{
+    font-size: 7em;
+    background-color: saddlebrown;
+    color: whitesmoke;
+    width: 700px;
+    text-align: center;
+}
